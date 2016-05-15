@@ -17,6 +17,11 @@ class IconMenu extends Component {
      * horizontal: [left, center, right].
      */
     anchorOrigin: propTypes.origin,
+	/**
+     * If true, the popover will apply transitions when
+     * added it gets added to the DOM.
+     */
+    animated: PropTypes.bool,
     /**
      * Should be used to pass `MenuItem` components.
      */
@@ -122,12 +127,6 @@ class IconMenu extends Component {
      * layer, which will prevent clicks to the underlying elements.
      */
     useLayerForClickAway: PropTypes.bool,
-	
-	/**
-     * If true, the popover will apply transitions when
-     * added it gets added to the DOM.
-     */
-    animated: _react2.default.PropTypes.bool
   };
 
   static defaultProps = {
@@ -135,8 +134,8 @@ class IconMenu extends Component {
       vertical: 'top',
       horizontal: 'left',
     },
+    animated: true,
     multiple: false,
-	animated: true,
     open: null,
     onItemTouchTap: () => {},
     onKeyboardFocus: () => {},
@@ -317,7 +316,7 @@ class IconMenu extends Component {
           childContextTypes={this.constructor.childContextTypes}
           useLayerForClickAway={useLayerForClickAway}
           onRequestClose={this.handleRequestClose}
-		  animated={animated}
+          animated={animated}
           context={this.context}
         >
           {menu}

@@ -240,7 +240,7 @@ class IconMenu extends Component {
     const {
       anchorOrigin,
       className,
-	  animated,
+      animated,
       iconButtonElement,
       iconStyle,
       onItemTouchTap, // eslint-disable-line no-unused-vars

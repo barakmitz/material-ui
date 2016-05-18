@@ -17,7 +17,7 @@ class IconMenu extends Component {
      * horizontal: [left, center, right].
      */
     anchorOrigin: propTypes.origin,
-	/**
+    /**
      * If true, the popover will apply transitions when
      * added it gets added to the DOM.
      */

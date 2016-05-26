@@ -19,7 +19,7 @@ class IconMenu extends Component {
     anchorOrigin: propTypes.origin,
     /**
      * If true, the popover will apply transitions when
-     * added it gets added to the DOM.
+     * it gets added to the DOM.
      */
     animated: PropTypes.bool,
     /**

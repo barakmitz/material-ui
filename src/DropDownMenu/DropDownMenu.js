@@ -74,9 +74,9 @@ class DropDownMenu extends Component {
   // other user components, so it will give full access to its js styles rather
   // than just the parent.
   static propTypes = {
-	  /**
-    * If true, the popover will apply transitions when
-    * it gets added to the DOM.
+    /**
+     * If true, the popover will apply transitions when
+     * it gets added to the DOM.
      */
     animated: PropTypes.bool,
     /**

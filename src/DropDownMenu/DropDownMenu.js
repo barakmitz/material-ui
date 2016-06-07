@@ -74,7 +74,7 @@ class DropDownMenu extends Component {
   // other user components, so it will give full access to its js styles rather
   // than just the parent.
   static propTypes = {
-	/**
+	  /**
     * If true, the popover will apply transitions when
     * it gets added to the DOM.
      */
@@ -145,7 +145,7 @@ class DropDownMenu extends Component {
   };
 
   static defaultProps = {
-	animated: true,
+	  animated: true,
     autoWidth: true,
     disabled: false,
     openImmediately: false,
@@ -235,7 +235,7 @@ class DropDownMenu extends Component {
 
   render() {
     const {
-	  animated,
+	    animated,
       autoWidth,
       children,
       className,
@@ -296,7 +296,7 @@ class DropDownMenu extends Component {
           anchorEl={anchorEl}
           animation={PopoverAnimationFromTop}
           open={open}
-		  animated={animated}
+		      animated={animated}
           onRequestClose={this.handleRequestCloseMenu}
         >
           <Menu
